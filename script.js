@@ -43,7 +43,7 @@ function showTask(){
 }
 showTask(); 
 
-
+// Drag drop eta bata suru huncha
 let dragSrcEl = null;
 
 function dragStart(e) {
@@ -69,7 +69,7 @@ function drop(e) {
         this.innerHTML = e.dataTransfer.getData('text/html');
         saveData();
         addDragAndDropHandlers(); 
-        // Re-add drag and drop handlers after drop
+ // Re-add drag and drop handlers after drop
     }
     return false;
 }
@@ -89,7 +89,7 @@ function addDragAndDropHandlers() {
 addDragAndDropHandlers();
 
 
-// filter 
+// filter component ko lagi
 
 function filterTasks() {
     const filter = filterTasksDropdown.value;
